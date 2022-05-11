@@ -1,3 +1,13 @@
+// we have to find the type of the input
+// incase of array instead of object print the array
+// in case of undefined and null print please enter a valid data
+// give the input
+// to find the type of array we have a method array,isarray so using it
+// write conditional statement for array
+//if true. print array else print the type of input
+// then write again conditional statement for undefined and null
+
+
 var x = [];
 Array = Array.isArray(Array);
 if (x == Array) {
