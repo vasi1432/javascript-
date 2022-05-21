@@ -1,2 +1,2 @@
-# js-practice2
-conditional statement for type of input
+javascript from basic to advance
+
