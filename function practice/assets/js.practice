@@ -1,0 +1,185 @@
+// parctice output type of function and
+// different way to get the output of fundtion
+// first create the function
+
+function greet() {
+  // we are using return type in the function
+  return "hello world";
+}
+// call the function to get output
+greet();
+greet();
+
+// we are using console  in the function
+function greet() {
+  console.log("hello world");
+}
+// call the function to get output
+greet();
+greet();
+// we get same output in both functions
+
+// here we are creating a function with three values spaces
+// then pass only two values in the function
+// so in place of third it gave output undefined
+// because space for third is vacant
+let greet2 = function (name1, name2, name3) {
+  console.log(name1, name2, name3);
+};
+greet2("vasi", "ahmed");
+
+// creating variables in function with same name
+// it will pass same value and gave same output
+let greet1 = function (name, name1) {
+  console.log(name, name1);
+};
+// calling the function for output
+greet1("vasi", "ahmed");
+
+//  here we can define functions in let var and const which is called variable function
+//  properties of let ,var and const applied here
+//  and behaving like that while declaring variables
+//  we can not run before initialising values in the function
+//  if we use console before declaring variable then it will show undefined
+var num1 = function name(a, b) {
+  return a - b;
+};
+let num2 = function name(a, b) {
+  return a - b;
+};
+const num3 = function name(a, b) {
+  return a - b;
+};
+// we can access var varible before declaration it will give undefined
+console.log(num1(90, 10));
+console.log(num2(80, 10));
+console.log(num3(70, 10));
+// if we use console before declaration in variable function it will through console.error
+// because first of all var store undefined in memory or we access undefined before declaration
+
+function getname(a) {
+  return a === undefined ? "NA" : a;
+}
+console.log(getname());
+
+function getname1(a, b) {
+  return a, b;
+}
+console.log(getname1("vasi", "2000"));
+
+// arrow function
+
+// default syntax of function
+function addition(a, b) {
+  return a + b;
+}
+console.log(addition(1, 2));
+
+// arrow function syntax 1
+const addition1 = (a, b) => {
+  return a + b;
+};
+console.log("arrow fun1", addition(11, 2));
+// arrow function syntax 2
+// instead of return we can simply write a arrow and than condition which we want
+const addition2 = (a, b) => a + b;
+console.log("arrow fun2", addition(12, 2));
+
+// we can use other variable but it is not recommended
+// after creating a funtion we do not re-initialize the value
+// so we are using const for arrow function declaration
+let addition3 = (a, b) => a + b;
+console.log("arrow fun3 using let  ", addition(12, 2));
+
+var addition4 = (a, b) => a + b;
+console.log("arrow fun4 using var ", addition(12, 2));
+
+// arrow function using refrence
+const x = (subs = (a, b, c) => a - b - c);
+console.log("by function name", subs(10, 3, 2)); //call by function name
+console.log("reference", x(10, 3, 2)); //call by refrence
+
+gettime = () => new Date();
+console.log("time using arrow function", gettime());
+
+//IIFE  functionv (imediate invoked function expression)
+//this function has no nedd to call
+//this is self calling function
+//IIFE function are anonymous function //doesn't have any name
+//basic syntax of iife function
+(function () {
+  console.log("this is IIfe function");
+  return 20; //Can not return this value
+})();
+// IIFE with arrow function
+(() => console.log("i am an IIFE function with arrow"))();
+
+// detailed IIFE function
+const details = (function (a = 5) {
+  console.log("details IIFE function");
+  for (let i = 0; i <= a; i++) {
+    console.log(i);
+  }
+})();
+// we can define value of a in both the
+
+const _details = (function (a) {
+  console.log("second details IIFE function");
+  for (let i = 0; i <= a; i++) {
+    console.log(i);
+  }
+})(8);
+
+// another iife function
+const __details = (function (b) {
+  for (let i = 0; i <= b; i++) {
+    console.log(i);
+  }
+})(10);
+
+var a = 10;
+var b = 20;
+c = 30;
+console.log(a, b, c); // 10 20 30
+// we can declare varible without using var,lot,const
+// but we cannot use console before initialization of am an accidental variabe
+//we noly access var before and we get undefined as output
+console.log("line 147", d, e);
+var d = 10;
+var e = 20;
+f = 30;
+//got an error that f is not defined
+function fun1() {
+  var a1 = (b1 = 10);
+}
+// console.log((a1, b1));
+//output  = a1 is not defined
+// beacuse we cannot access the function's variables outside the function
+
+function fun2() {
+  var c1 = (d1 = 10);
+}
+// console.log(c1, d1);
+fun2();
+//output c1 is not defined
+
+function fun3() {
+  z = 100;
+  return z;
+}
+console.log(fun3());
+//output is 100
+//if we call z instead of fun then output will be "z is not defined"
+
+function newOne() {
+  const a22 = (B = 18);
+  return B;
+}
+// console.log(a22);
+
+console.log(345);
+v12 = 345;
+//we can access accidental variable before its initialization
+// v12 is an accidental variable
+// we can access accidental variable of a function outside the function
+// but cannot access variables outside the function

@@ -1,0 +1,24 @@
+var name = "vasi";
+var age = 21;
+var alive = true;
+var height = 5.3;
+var obj = {};
+var  arr = [1,2,3];
+var gf = null;
+var v1;
+
+console.log(name, age, alive, height, obj, arr,gf, v1 );
+console.log(typeof name);
+console.log(typeof age);
+console.log(typeof alive);
+//float has number datatype
+console.log(typeof height);
+//object and null has object type
+console.log(typeof obj);
+console.log(typeof gf);
+//and if we not define any value that this variable has undefined datatype 
+console.log(typeof v1);
+//array has object datatype;
+console.log(typeof arr);
+
+

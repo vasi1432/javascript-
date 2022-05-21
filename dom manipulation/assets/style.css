@@ -1,0 +1,62 @@
+.rating {
+  background-color: rgb(36, 150, 63);
+  color: white;
+  border-radius: 10px;
+  width: 47px;
+  height: 29px;
+  padding: 0 4px;
+}
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+.data h4 {
+  padding: 5px;
+}
+.data span {
+  padding: 5px;
+  color: #8f8f8f;
+}
+#card {
+  border: 1px solid transparent;
+  padding: 5px;
+  border-radius: 15px;
+  width: 20%;
+  font-size: 20px;
+}
+.card:hover {
+  border: 1px solid silver;
+  /* transform: scale(1.1); */
+}
+.card-img {
+  position: relative;
+}
+.card-img img {
+  height: 270px;
+  width: 350px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+}
+
+.discount {
+  position: absolute;
+  background-color: rgb(26 26 255);
+  padding: 0px 5px;
+  color: white;
+  left: 10px;
+  bottom: 20px;
+  border-radius: 2px;
+}
+.time {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  background-color: rgb(164, 164, 164);
+  border-radius: 3px;
+  padding: 1px 4px;
+  color: #f0f0f0;
+}
