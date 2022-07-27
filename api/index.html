@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+     body{
+        background-color: rgb(209, 209, 209);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .main {
+        display: flex;
+        gap: 20px;
+        text-align: center;
+   
+      }
+      .main p {
+        font-size: 20px;
+        font-weight: bolder;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .column{
+        text-align: center;
+        background-color: white;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 5px;
+       }
+   
+     
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="box">
+        <p>COUNTRY</p>
+        <div id="country"></div>
+      </div>
+      <div class="box">
+        <p>CODE</p>
+        <div id="code"></div>
+      </div>
+
+      <div class="box">
+        <p>TOTALCASES</p>
+        <div id="totalcases"></div>
+      </div>
+      <div class="box">
+        <p>DEATHS</p>
+        <div id="deaths"></div>
+      </div class="box">
+      <div>
+        <p>RECOVERED</p>
+        <div id="recovered"></div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="./assets/script.js"></script>
